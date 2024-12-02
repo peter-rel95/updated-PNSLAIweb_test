@@ -62,9 +62,9 @@
                     <ul>
                         <li><a class="btn btn-outline-info dropdown-item border-top border-info lh-1"  href="#"></a></li>
                         <li><a class="btn btn-outline-info dropdown-item lh-1 disabled" href="../pages/membership.html">Membership</a></li>
-                        <li><a class="btn btn-outline-info dropdown-item lh-1" href="../pages/savings.html">Saving</a></li>
+                        <li><a class="btn btn-outline-info dropdown-item lh-1" href="../pages/savings.html">Savings</a></li>
                         <li><a class="btn btn-outline-info dropdown-item lh-1" href="../pages/loan.html">Loan</a></li>
-                        <li><a class="btn btn-outline-info dropdown-item lh-1 disabled" href="../pages/account.html">Account Inquiry</a></li>
+                        <li><a class="btn btn-outline-info dropdown-item lh-1 disabled" href="../pages/account.php">Account Inquiry</a></li>
                     </ul>
                 </div>
             </li>
@@ -102,8 +102,8 @@
    <div class="col-md-10 py-5 border border-info rounded-2 mb-5 shadow-lg">
     <div class="nav nav-tabs " id="nav-tab" role="tablist">
        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
-       <button class="nav-link mem-but rounded-1" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Qualified Member</button>
-       <button class="nav-link mem-but rounded-1" id="nav-contact-tab"data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Basic Requirements</button>
+       <button class="nav-link mem-but rounded-1" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Qualified Members</button>
+       <button class="nav-link mem-but rounded-1" id="nav-contact-tab"data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Requirements</button>
        <button class="nav-link mem-but rounded-1" id="nav-web-tab" data-bs-toggle="tab" data-bs-target="#nav-web" type="button" role="tab" aria-controls="nav-web" aria-selected="false">Guidelines</button>
     </div>
      <div class="tab-content" id="nav-tabContent">
@@ -144,7 +144,7 @@
           </div>
        </div>
       </div>
-      <!--BASIC REQUIREMENTS 3RD COLUMN-->
+      <!--REQUIREMENTS 3RD COLUMN-->
       <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
        <div class="row bg-info text-light ">
         <div class="col-12 col-sm-12 col-md-4 py-4">
@@ -159,27 +159,44 @@
               <div class="tab-pane fade show active" id="v-pills-home2" role="tabpanel" aria-labelledby="v-pills-home2-tab" tabindex="0">
                 <div class="container">
                  <div class="row row-cols-lg-12">
-                   <div><h5 class="fw-bold text-secondary mb-4"><i class="text-success fa-solid fa-list"></i> Requirements</h5>
+                   <div>
+                    <hr>
                     <ul class="list-unstyled lh-sm" style="font-size:94%;">
-                      <li class="d-flex"><i class="fas fa-check text-secondary fa-1x px-1"></i>
-                        <span class="member-text fs-7 mb-3 text-light">Completely filled-up Membership Form</span></li>
-                      <li class="d-flex"><i class="fas fa-check text-secondary fa-1x px-1"></i>
-                        <span class="member-text fs-7 mb-3 text-light">1x1 Recent ID Picture (2pcs)</span></li>
-                      <li class="d-flex"><i class="fas fa-check text-secondary fa-1x px-1"></i>
-                        <span class="member-text fs-7 mb-3 text-light">Military / Civilian Employee ID and other valid ID (unexpired)/ for Minor ages 7 years old & below, Birth Certificate is allowed as proof of identification<</span></li>
-                      <li class="d-flex"><i class="fas fa-check text-secondary fa-1x px-1"></i>
-                        <span class="member-text fs-7 mb-3 text-light">For Military Personnel: Proof of Employment (photocopies)* Appointment Order CAD Order
-                        Enlistment/Re-Enlistment Order Retirement Order</span></li>
-                      <li class="d-flex"><i class="fas fa-check text-secondary fa-1x px-1"></i>
-                        <span class="member-text fs-7 mb-3 text-light">For Civilian Personnel: Proof of Employment (photocopies)* Certificate of Employment (COE)/ Appointment Order<</span></li>
-                      <li class="d-flex"><i class="fas fa-check text-secondary fa-1x px-1"></i>
-                        <span class="member-text fs-7 mb-3 text-light">For Dependent: Proof of Relationship to Principal Member (photocopies)*</span>
+                      <li class="d-flex"> <span class="member-text fs-7 mb-3 text-light"><i class="text-secondary fa-solid fa-list"></i><strong class="text-secondary">For Military Personnel:</strong> Proof of Military Service (photocopies)</span>
                       </li>
-                      <li class="d-flex ms-5 fw-bold" style="font-size:94%;">
+                      <li class="d-flex ms-5 mb-3 fw-bold" style="font-size:94%;">
                         <ul class="list-unstyled">
-                            <li>1) Dependent's ID</li> 
-                            <li>2) Birth Certificate (NSO/PSA copy)</li> 
-                            <li>3) Marriage Contract/Certificate (NSO/PSA copy)</li>
+                          <li><i class="fas fa-check text-secondary fa-1x px-1"></i> Military ID/ Retired Military ID</li>
+                          <li><i class="fas fa-check text-secondary fa-1x px-1"></i> Appointment Order/ CAD Order Enlistment (for officer)</li>
+                          <li><i class="fas fa-check text-secondary fa-1x px-1"></i> Enlistment/ Re-Enlistment Order (for enlisted personnel)</li>
+                          <li><i class="fas fa-check text-secondary fa-1x px-1"></i> Retirement Order (for retiree)</li>
+                        </ul>
+                      </li>
+                      <li class="d-flex"><span class="member-text fs-7 mb-3 text-light"><i class="text-secondary fa-solid fa-list"></i> <strong class="text-secondary">For Civilian Personnel:</strong> Proof of Employment (photocopies)</span></li>
+                        <li class="d-flex ms-5 mb-3 fw-bold" style="font-size:94%;">
+                          <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-secondary fa-1x px-1"></i> Employee ID</li>
+                            <li><i class="fas fa-check text-secondary fa-1x px-1"></i> Certificate of Employment (COE)</li>
+                            <li><i class="fas fa-check text-secondary fa-1x px-1"></i> Appointment Order</li>
+                          </ul>
+                        </li>
+                      <li class="d-flex"><span class="member-text fs-7 mb-3 text-light"><i class="text-secondary fa-solid fa-list"></i> <strong class="text-secondary">For Dependent:</strong> Proof of Relationship to Principal Member (photocopies)</span></li>
+                      <li class="d-flex ms-5 mb-3 fw-bold" style="font-size:94%;">
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-secondary fa-1x px-1"></i> Birth Certificate (NSO/PSA)</li> 
+                            <li><i class="fas fa-check text-secondary fa-1x px-1"></i> Marriage Contract/Certificate (NSO/PSA)</li>
+                            <li><i class="fas fa-check text-secondary fa-1x px-1"></i> Dependent's ID</li>
+                            <li><i class="fas fa-check text-secondary fa-1x px-1"></i> for Minor ages 7 years old & below, Birth Certificate is allowed as proof of identification</li>  
+                        </ul>
+                      </li>
+                      <li class="d-flex"><span class="member-text fs-7 mb-3 text-light"><i class="text-secondary fa-solid fa-list"></i> <strong class="text-secondary">Other:</strong></span></li>
+                      <li class="d-flex ms-5 mb-3 fw-bold" style="font-size:94%;">
+                        <ul class="list-unstyled">
+                          <li><i class="fas fa-check text-secondary fa-1x px-1"></i> Completely filled-up Membership Form</li>
+                          <li><i class="fas fa-check text-secondary fa-1x px-1"></i> 1x1 Recent ID Picture (2pcs)</li>
+                          <li><i class="fas fa-check text-secondary fa-1x px-1"></i> 1 to 2 valid IDs (unexpired)</li>
+                          <li><i class="fas fa-check text-secondary fa-1x px-1"></i> P50.00 membership fee</li>
+                          <li><i class="fas fa-check text-secondary fa-1x px-1"></i> P1,000.00 initial capital contribution deposit</li>
                         </ul>
                       </li>
                     </ul>
@@ -326,34 +343,36 @@
   <div class="membership-modal">
    <div id="modal2" class="modal fade">
      <div class="modal-dialog modal-lg mt-6 px-7">
-           <div class="col-md-6">
-             <ol class="list-group list-group-numbered shadow-lg lh-sm">
-            <li class="list-group-item">e-Card / UMID</li>
-            <li class="list-group-item bg-warning">Employee’s ID / Office Id</li>
-            <li class="list-group-item">Driver’s License*</li>
-            <li class="list-group-item bg-warning">Professional Regulation Commission (PRC) ID *</li>
-            <li class="list-group-item">Passport *</li>
-            <li class="list-group-item bg-warning">Senior Citizen ID</li>
-            <li class="list-group-item">SSS ID</li>
-            <li class="list-group-item bg-warning">COMELEC / Voter’s ID / COMELEC Registration Form</li>
-            <li class="list-group-item">Philippine Identification (PhilID / ePhilID)</li>
-            <li class="list-group-item bg-warning">NBI Clearance *</li>
-            <li class="list-group-item">Integrated Bar of the Philippines (IBP) ID</li>
-            <li class="list-group-item bg-warning">Firearms License *</li>
-            <li class="list-group-item">AFPSLAI ID *</li>
-            <li class="list-group-item bg-warning">PVAO ID</li>
-            <li class="list-group-item">AFP Beneficiary ID</li>
-            <li class="list-group-item bg-warning">BIR (TIN)</li>
-            <li class="list-group-item">Pag-ibig ID</li>
-            <li class="list-group-item bg-warning">Person’s With Disability (PWD) ID</li>
-            <li class="list-group-item">Solo Parent ID</li>
-            <li class="list-group-item bg-warning">Pantawid Pamilya Pilipino Program (4Ps) ID *</li>
-            <li class="list-group-item">Barangay ID *</li>
-            <li class="list-group-item bg-warning">Philippine Postal ID *</li>
-            <li class="list-group-item">Phil-health ID</li>
-            <li class="list-group-item bg-warning">School ID **</li>
-            <li class="list-group-item">Other valid government-issued IDs or</li>
-            <li class="list-group-item bg-warning">Documents with picture and signature</li>
+           <div class="col-md-7">
+            <ol class="list-group list-group-numbered membership-text shadow-lg lh-sm">
+              <li class="list-group-item">PASSPORT</li>
+              <li class="list-group-item bg-warning">DRIVER'S LICENSE</li>
+              <li class="list-group-item">TIN</li>
+              <li class="list-group-item bg-warning">PRC (Professional Regulation Commission)</li>
+              <li class="list-group-item">POLICE CLEARANCE</li>
+              <li class="list-group-item bg-warning">SENIOR CITIZEN</li>
+              <li class="list-group-item">SSS</li>
+              <li class="list-group-item bg-warning">VOTER'S/ COMELEC</li>
+              <li class="list-group-item">PHILIPPINE NATIONAL (ePhil)</li>
+              <li class="list-group-item bg-warning">NBI Clearance</li>
+              <li class="list-group-item">IBP (Integrated Bar of the Philippines)</li>
+              <li class="list-group-item bg-warning">FIREARMS LICENSE</li>
+              <li class="list-group-item">EMPLOYEE/ COMPANY</li>
+              <li class="list-group-item bg-warning">SEAMAN'S BOOK</li>
+              <li class="list-group-item">(SEC) CERTIFICATE OF REGISTRATION</li>
+              <li class="list-group-item bg-warning">TIN/BIR</li>
+              <li class="list-group-item">PAG-IBIG</li>
+              <li class="list-group-item bg-warning">PWD (Person’s With Disability)</li>
+              <li class="list-group-item">GSIS E-CARD/ UMID</li>
+              <li class="list-group-item bg-warning">NCWDP (Certification from National Council for the Welfare of Disabled Persons)</li>
+              <li class="list-group-item">BARANGAY-ID/ CERTIFICATE</li>
+              <li class="list-group-item bg-warning">PHILIPPINE POSTAL</li>
+              <li class="list-group-item">PHILHEALTH</li>
+              <li class="list-group-item bg-warning">SCHOOL/ STUDENT</li>
+              <li class="list-group-item">BUSINESS REGISTRATION CERTIFICATE</li>
+              <li class="list-group-item bg-warning">DSWD</li>
+              <li class="list-group-item">GOCC/ GOVERNMENT OFFICE</li>
+              <li class="list-group-item bg-warning">Other valid government-issued IDs or</li>
              </ol>
            </div>
      </div>
