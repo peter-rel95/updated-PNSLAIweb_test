@@ -59,6 +59,182 @@ transition: all 0.5s ease-in-out;
 .contact{border-top-right-radius: 100px;}    
 .contact-inf{top:300px;}
 //*** HOME-PAGE_END *** // 
+//*** HISTORY PAGE ***// 
+.history-sdw {
+    max-height: 40px;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-size: cover;}
+* {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;}
+.cd_try {
+    color: black;
+    font: 1em/1.5 "IBM Plex Sans", sans-serif;
+    background: linear-gradient(to bottom right,
+            rgba(0, 0, 0, 0.0),
+            rgba(0, 0, 0, 0.0)),
+        url('../images/pnslai.png') center center no-repeat !important;
+    background-size: cover !important;}
+.cd__main {
+    color: black;
+    font: 1em/1.5 "IBM Plex Sans", sans-serif;
+    background: linear-gradient(to bottom right,
+            rgba(0, 0, 0, 0.0),
+            rgba(0, 0, 0, 0.0)),
+        url('../images/H.O.png') center center no-repeat !important;
+    background-size: cover !important;
+}
+:root {
+    --hue: 223;
+    --bg: hsl(var(--hue), 10%, 90%);
+    --fg: hsl(var(--hue), 10%, 10%);
+    --primary: hsl(var(--hue), 90%, 50%);
+    --trans-dur: 0.3s;
+    --trans-timing: cubic-bezier(0.65, 0, 0.35, 1);}
+.btn-history {
+    background-color: var(--fg);
+    border-radius: 0.25em;
+    color: var(--bg);
+    cursor: pointer;
+    padding: 0.375em 0.75em;
+    transition:
+        background-color calc(var(--trans-dur) / 2) linear,
+        color var(--trans-dur);
+    -webkit-tap-highlight-color: transparent;}
+.btn-history:hover {
+    background-color: hsl(var(--hue), 10%, 50%);}
+.btn-group {
+    display: flex;
+    gap: 0.375em;
+    margin-bottom: 1.5em;}
+.timeline {
+    margin: auto;
+    padding: 0 1.5em;
+    width: 100%;
+    max-width: 36em;}
+.timeline__arrow {
+    background-color: transparent;
+    border-radius: 0.25em;
+    cursor: pointer;
+    color: #ffffff;
+    flex-shrink: 0;
+    margin-inline-end: 0.25em;
+    outline: transparent;
+    width: 2em;
+    height: 2em;
+    transition:
+        background-color calc(var(--trans-dur) / 2) linear,
+        color var(--trans-dur);
+    -webkit-appearance: none;
+    appearance: none;
+    -webkit-tap-highlight-color: transparent;}
+.timeline__arrow:focus-visible,
+.timeline__arrow:hover {
+    background-color: hsl(var(--hue), 10%, 50%, 0.4);}
+.timeline__arrow-icon {
+    display: block;
+    pointer-events: none;
+    transform: rotate(-90deg);
+    transition: transform var(--trans-dur) var(--trans-timing);
+    width: 100%;
+    height: auto;}
+.timeline__date {
+    font-size: 0.833em;
+    line-height: 2.4;}
+.timeline__dot {
+    display: inline-block;
+    background: linear-gradient(to bottom right,
+                rgba(0, 0, 0, 0.0),
+                rgba(0, 0, 0, 0.0)),
+            url('../images/pnslai.png') center center no-repeat !important;
+        background-size: cover !important;
+    flex-shrink: 0;
+    right: 1%;
+    border-radius:10%;
+    position: relative;
+    width: 1.5em;
+    height: 1.5em;}
+.timeline__item {
+    position: relative;
+    padding-bottom: 2.25em; color: navy;}
+.timeline__item:not(:last-child):before {
+    background-color: currentColor;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 1em;
+    left: 2.625em;
+    width: 0.125em;
+    height: 100%;
+    transform: translateX(-50%);}
+[dir="rtl"] .timeline__arrow-icon {
+    transform: rotate(90deg);}
+[dir="rtl"] .timeline__item:not(:last-child):before {
+    right: 2.625em;
+    left: auto;
+    transform: translateX(50%);}
+.timeline__item-header {display: flex;}
+.timeline__item-body {
+    border-radius: 0.375em;
+    overflow: hidden;
+    margin-top: 0.5em;
+    margin-inline-start: 4em;
+    height: 0;}
+.timeline__item-body-content {
+    background: linear-gradient(to right, #1c92d2, rgb(21, 84, 154)) !important;
+    color: white;
+    opacity: 0;
+    padding: 0.5em 0.75em;
+    visibility: hidden;
+    transition:
+    opacity var(--trans-dur) var(--trans-timing),
+    visibility var(--trans-dur) steps(1, end);}
+.timeline__meta {width: 100%;}
+.timeline__title {
+    font-size: 1.5em;
+    line-height: 1.333;}
+/* Expanded state */
+.timeline__item-body--expanded {
+    height: auto;}
+.timeline__item-body--expanded .timeline__item-body-content {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: var(--trans-dur), 0s;
+}
+.timeline__arrow[aria-expanded="true"] .timeline__arrow-icon {
+    transform: rotate(0);
+}
+/* Dark theme */
+@media (prefers-color-scheme: dark) { :root {
+        --bg: hsl(var(--hue), 10%, 10%);
+        --fg: hsl(var(--hue), 10%, 90%);
+        --primary: hsl(var(--hue), 90%, 70%); }}
+//*** HISTORY PAGE_END ***//
+
+//*** ORGANIZATIONAL CHART PAGE ***// 
+.org-sdw {
+    background-color: rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    max-height: 40px;}
+//*** ORGANIZATIONAL CHART PAGE_END ***//
+
+//*** BOT PAGE ***//
+.board-sdw {
+    max-height: 30px;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-size: cover;
+}
+//*** BOT PAGE_END ***//
+
+//*** MANAGEMENT PAGE ***// 
+.management-sdw {
+    max-height: 30px;
+    background-color: rgba(204, 164, 164, 0.1);
+    background-size: cover;
+}
+//*** MANAGEMENT PAGE_END ***//
 
 //*** NEWS & UPDATES PAGE ***// 
 .upd-but {border-radius: 0%;color: rgb(21, 84, 154);}
@@ -119,166 +295,6 @@ img.read:hover {
 .announce-img{opacity: 1;display: block;width:100%;height: 
     auto;transition: .5s ease;backface-visibility: hidden;}
 //*** ANNOUNCEMENT PAGE_END ***// 
-
-//*** HISTORY PAGE ***// 
-.history-sdw {max-height: 40px;
-    background-color: rgba(0, 0, 0, 0.1);background-size: cover;}
-* {
-    border: 0;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-.cd__main {color: black;
-    font: 1em/1.5 "IBM Plex Sans", sans-serif;
-    background: linear-gradient(to bottom right,
-                rgba(0, 0, 0, 0.0),
-                rgba(0, 0, 0, 0.0)),
-            url('../images/H.O.png') center center no-repeat!important;
-        background-size: cover!important;
-}
-:root {
-    --hue: 223;
-    --bg: hsl(var(--hue), 10%, 90%);
-    --fg: hsl(var(--hue), 10%, 10%);
-    --primary: hsl(var(--hue), 90%, 50%);
-    --trans-dur: 0.3s;
-    --trans-timing: cubic-bezier(0.65, 0, 0.35, 1);}
-
-.btn-history {
-    background-color: var(--fg);
-    border-radius: 0.25em;
-    color: var(--bg);
-    cursor: pointer;
-    padding: 0.375em 0.75em;
-    transition:
-        background-color calc(var(--trans-dur) / 2) linear,
-        color var(--trans-dur);
-    -webkit-tap-highlight-color: transparent;}
-.btn-history:hover {
-    background-color: hsl(var(--hue), 10%, 50%);}
-.btn-group {
-    display: flex;
-    gap: 0.375em;
-    margin-bottom: 1.5em;}
-.timeline {
-    margin: auto;
-    padding: 0 1.5em;
-    width: 100%;
-    max-width: 36em;}
-.timeline__arrow {
-    background-color: transparent;
-    border-radius: 0.25em;
-    cursor: pointer;
-    flex-shrink: 0;
-    margin-inline-end: 0.25em;
-    outline: transparent;
-    width: 2em;
-    height: 2em;
-    transition:
-        background-color calc(var(--trans-dur) / 2) linear,
-        color var(--trans-dur);
-    -webkit-appearance: none;
-    appearance: none;
-    -webkit-tap-highlight-color: transparent;}
-.timeline__arrow:focus-visible,
-.timeline__arrow:hover {
-    background-color: hsl(var(--hue), 10%, 50%, 0.4);}
-.timeline__arrow-icon {
-    display: block;
-    pointer-events: none;
-    transform: rotate(-90deg);
-    transition: transform var(--trans-dur) var(--trans-timing);
-    width: 100%;
-    height: auto;}
-.timeline__date {
-    font-size: 0.833em;
-    line-height: 2.4;}
-.timeline__dot {
-    background-color: currentColor;
-    border-radius: 50%;
-    display: inline-block;
-    flex-shrink: 0;
-    margin: 0.625em 0;
-    margin-inline-end: 1em;
-    position: relative;
-    width: 0.75em;
-    height: 0.75em;}
-.timeline__item {
-    position: relative;
-    padding-bottom: 2.25em;}
-.timeline__item:not(:last-child):before {
-    background-color: currentColor;
-    content: "";
-    display: block;
-    position: absolute;
-    top: 1em;
-    left: 2.625em;
-    width: 0.125em;
-    height: 100%;
-    transform: translateX(-50%);}
-[dir="rtl"] .timeline__arrow-icon {
-    transform: rotate(90deg);}
-
-[dir="rtl"] .timeline__item:not(:last-child):before {
-    right: 2.625em;
-    left: auto;
-    transform: translateX(50%);}
-.timeline__item-header {display: flex;}
-.timeline__item-body {
-    border-radius: 0.375em;
-    overflow: hidden;
-    margin-top: 0.5em;
-    margin-inline-start: 4em;
-    height: 0;}
-.timeline__item-body-content {
-    background: linear-gradient(to right, #1c92d2, rgb(21,84,154)) !important;
-    color:white;
-    opacity: 0;
-    padding: 0.5em 0.75em;
-    visibility: hidden;
-    transition:
-    opacity var(--trans-dur) var(--trans-timing),
-    visibility var(--trans-dur) steps(1, end);}
-.timeline__meta {width: 100%;}
-
-.timeline__title {
-    font-size: 1.5em;
-    line-height: 1.333;}
-/* Expanded state */
-.timeline__item-body--expanded {height: auto;}
-.timeline__item-body--expanded .timeline__item-body-content {
-    opacity: 1;
-    visibility: visible;
-    transition-delay: var(--trans-dur), 0s;}
-.timeline__arrow[aria-expanded="true"] .timeline__arrow-icon {transform: rotate(0);}
-
-/* Dark theme */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --bg: hsl(var(--hue), 10%, 10%);
-        --fg: hsl(var(--hue), 10%, 90%);
-        --primary: hsl(var(--hue), 90%, 70%);}}
-//*** HISTORY PAGE_END ***//
-
-//*** ORGANIZATIONAL CHART PAGE ***// 
-.org-sdw {
-    background-color: rgba(0, 0, 0, 0.1);
-    background-size: cover;max-height: 40px;}
-//*** ORGANIZATIONAL CHART PAGE_END ***//
-
-//*** BOT PAGE ***//
-.board-sdw {max-height: 30px;
-    background-color: rgba(0, 0, 0, 0.1);background-size: cover;} 
-//*** BOT PAGE_END ***//
-
-//*** MANAGEMENT PAGE ***// 
-.management-sdw {max-height: 30px;
-    background-color: rgba(204, 164, 164, 0.1);background-size: cover;}
-//*** MANAGEMENT PAGE_END ***//
-
-//*** NEWS/UPDATES PAGE ***// 
-//*** NEWS/UPDATES PAGE_END ***//
 
 //*** PUBLICATIONS PAGE ***// 
 .publication-heading {
