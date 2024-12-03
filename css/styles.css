@@ -155,89 +155,6 @@ body {
   top: 300px;
 }
 
-.upd-but {
-  border-radius: 0%;
-  color: rgb(21, 84, 154);
-}
-
-.news-list .product-item {
-  min-height: 200px;
-  border: none;
-  overflow: hidden;
-  position: relative;
-  border-radius: 0;
-}
-
-.news-list .product-item .product {
-  width: 100%;
-  height: 340px;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.news-list .product-item .product img {
-  width: 100%;
-  height: 100%;
-  object-fit: fit;
-}
-
-.news-list .product-item .product .icons .icon {
-  width: 40px;
-  height: 40px;
-  background-color: rgb(21, 84, 154);
-  color: aliceblue;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: large;
-  transition: transform 0.6s ease;
-  transform: rotate(180deg);
-  cursor: pointer;
-}
-
-img.read {
-  --c: rgb(21, 84, 154);
-  padding: calc(var(--b) + var(--g));
-  background-image: conic-gradient(from 90deg at top var(--b) left var(--b), rgba(0, 0, 0, 0) 25%, var(--c) 0), conic-gradient(from -90deg at bottom var(--b) right var(--b), rgba(0, 0, 0, 0) 25%, var(--c) 0);
-  background-position: var(--_p, 0%) var(--_p, 0%), calc(100% - var(--_p, 0%)) calc(100% - var(--_p, 0%));
-  background-size: var(--s) var(--s);
-  background-repeat: no-repeat;
-  cursor: pointer;
-  transition: background-position 0.2s var(--_i, 0.1s), background-size 0.2s calc(0.3s - var(--_i, 0.1s));
-}
-
-img.read:hover {
-  background-size: calc(100% - var(--g)) calc(100% - var(--g));
-  --_p: calc(var(--g)/2);
-  --_i: 0s;
-}
-
-.announce-header {
-  background: url(../images/soldier.png) center center no-repeat;
-  max-height: 220px;
-  background-size: cover;
-  border-bottom: 3px solid rgb(21, 84, 154);
-}
-
-.announce-par {
-  font-size: 90%;
-}
-
-.announce-hover:hover .announce-img {
-  opacity: 0.5;
-}
-
-.announce-img {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: 0.5s ease;
-  backface-visibility: hidden;
-}
-
 .history-sdw {
   max-height: 40px;
   background-color: rgba(0, 0, 0, 0.1);
@@ -249,6 +166,13 @@ img.read:hover {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.cd_try {
+  color: black;
+  font: 1em/1.5 "IBM Plex Sans", sans-serif;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/pnslai.png") center center no-repeat !important;
+  background-size: cover !important;
 }
 
 .cd__main {
@@ -298,6 +222,7 @@ img.read:hover {
   background-color: transparent;
   border-radius: 0.25em;
   cursor: pointer;
+  color: #ffffff;
   flex-shrink: 0;
   margin-inline-end: 0.25em;
   outline: transparent;
@@ -329,20 +254,21 @@ img.read:hover {
 }
 
 .timeline__dot {
-  background-color: currentColor;
-  border-radius: 50%;
   display: inline-block;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/pnslai.png") center center no-repeat !important;
+  background-size: cover !important;
   flex-shrink: 0;
-  margin: 0.625em 0;
-  margin-inline-end: 1em;
+  right: 1%;
+  border-radius: 10%;
   position: relative;
-  width: 0.75em;
-  height: 0.75em;
+  width: 1.5em;
+  height: 1.5em;
 }
 
 .timeline__item {
   position: relative;
   padding-bottom: 2.25em;
+  color: navy;
 }
 
 .timeline__item:not(:last-child):before {
@@ -436,6 +362,89 @@ img.read:hover {
   max-height: 30px;
   background-color: rgba(204, 164, 164, 0.1);
   background-size: cover;
+}
+
+.upd-but {
+  border-radius: 0%;
+  color: rgb(21, 84, 154);
+}
+
+.news-list .product-item {
+  min-height: 200px;
+  border: none;
+  overflow: hidden;
+  position: relative;
+  border-radius: 0;
+}
+
+.news-list .product-item .product {
+  width: 100%;
+  height: 340px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.news-list .product-item .product img {
+  width: 100%;
+  height: 100%;
+  object-fit: fit;
+}
+
+.news-list .product-item .product .icons .icon {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(21, 84, 154);
+  color: aliceblue;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  transition: transform 0.6s ease;
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
+img.read {
+  --c: rgb(21, 84, 154);
+  padding: calc(var(--b) + var(--g));
+  background-image: conic-gradient(from 90deg at top var(--b) left var(--b), rgba(0, 0, 0, 0) 25%, var(--c) 0), conic-gradient(from -90deg at bottom var(--b) right var(--b), rgba(0, 0, 0, 0) 25%, var(--c) 0);
+  background-position: var(--_p, 0%) var(--_p, 0%), calc(100% - var(--_p, 0%)) calc(100% - var(--_p, 0%));
+  background-size: var(--s) var(--s);
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: background-position 0.2s var(--_i, 0.1s), background-size 0.2s calc(0.3s - var(--_i, 0.1s));
+}
+
+img.read:hover {
+  background-size: calc(100% - var(--g)) calc(100% - var(--g));
+  --_p: calc(var(--g)/2);
+  --_i: 0s;
+}
+
+.announce-header {
+  background: url(../images/soldier.png) center center no-repeat;
+  max-height: 220px;
+  background-size: cover;
+  border-bottom: 3px solid rgb(21, 84, 154);
+}
+
+.announce-par {
+  font-size: 90%;
+}
+
+.announce-hover:hover .announce-img {
+  opacity: 0.5;
+}
+
+.announce-img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
 }
 
 .publication-heading {
