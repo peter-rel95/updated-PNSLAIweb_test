@@ -4,6 +4,13 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
+.bg-pic{
+ background-color: #ffffff;
+ background-image: url(../images/co.png);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
 
 .nav-header {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
