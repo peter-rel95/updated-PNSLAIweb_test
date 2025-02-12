@@ -11,7 +11,10 @@ body {
  background-repeat: no-repeat;
  background-size: cover;
 }
-
+.try-home{
+    padding-left: 5%;
+    padding-right: 5%;
+}
 .nav-header {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 14px;
