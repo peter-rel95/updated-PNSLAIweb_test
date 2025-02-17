@@ -4,17 +4,13 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
-.bg-pic{
- background-color: #ffffff;
- background-image: url(../images/co.png);
- background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
-}
 .try-home{
     padding-left: 5%;
     padding-right: 5%;
 }
+.privacy{
+    width: 100%;
+    height:330px;}
 .nav-header {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 14px;
