@@ -88,36 +88,6 @@
 <section>
     <div class="announce-header vh-100"></div>
 </section>  
-<!-- Jot Form-->
-<section class="col-md-12"> 
- <div class="application-container">
-   <div class="container bg-warning text-light mt-5 mb-5 fs-8 fw-bolder">
-     <div class="row">
-      <h3 class=" fw-bolder text-info text-center"><span><i class="fa-solid fa-list"></i> PNSLAI E-LOAN APPLICATION</h3>
-        
-    <iframe
-      id="JotFormIFrame-242961841451054"
-      title="PNSLAI E-LOAN APPLICATION"
-      onload="window.parent.scrollTo(0,0)"
-      allowtransparency="true"
-      allow="geolocation; microphone; camera; fullscreen"
-      src="https://form.jotform.com/242961841451054"
-      frameborder="0"
-      style="min-width:100%;max-width:100%;height:539px;border:none;"
-      scrolling="no"
-    >
-    </iframe>
-    <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
-    <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-242961841451054']", "https://form.jotform.com/")</script>
-    
-        
-        <h3 class=" fw-bolder text-info text-center">PNSLAI E-LOAN APPLICATION</h3>
-        <script src='https://form.jotform.com/s/umd/latest/for-form-embed-handler.js'></script>
-        <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-240847802880058'", "https://form.jotform.com/")</script>
-     </div>
-   </div>
- </div>
-</section>
 <!--footer-->
 <footer class="text-bg-info mt-5">
     <div class="container">
@@ -125,49 +95,40 @@
             <hr class="bg-light mt-3" style="height:5px;">
             <div class="col-md-5">
                 <div><a href=""><img src="../images/PNSLAI-HEADING.png" class="img-fluid" width="300"></a></div>
-                <div class="d-flex gap-3 py-3">
+                <div class="d-flex gap-3 py-3">  
                     <span class="fa-brands fa-wpforms fa-2x"></span>
-                    <p class="lh-sm footer-dit">You may also refer your concerns to the BSP Consumer Empowerment Center
-                        learning
-                        and inclusion advocacy with contactnumber (02) 8708-7087 email address
-                        consumeraffairs@bsp.gov.ph</p>
-                </div>
-                <div class="d-flex gap-1 mb-3">
-                    <span><img src="../images/PHILIPPINE_FLAG.png" width="55" class="img-fluid"></span>
-                    <p class="mt-3 lh-sm footer-dit">You may visit us at any PNSLAI Branch Office Nationwide</p>
-                </div>
-                <div class="d-flex gap-1 my-4 ms-1">
+                    <p class="lh-sm footer-dit">You may also refer your concerns to the BSP Consumer Empowerment Center Learning and Inclusion Advocacy with contact number (02) 8708-7087, and email address, consumeraffairs@bsp.gov.ph .</p>
+                  </div>
+                  <div class="d-flex gap-1 mb-3">
+                    <span><img src="../images/PHILIPPINE_FLAG.png" width="80"class="img-fluid"></span>
+                    <p class="mt-3 lh-sm footer-dit">You may visit us at any PNSLAI office nationwide, strategically located in Luzon, Visayas, and Mindanao.</p>
+                  </div>
+                  <div class="d-flex gap-1 my-4 ms-1">
                     <span class="fa-regular fa-user-plus fa-2x"></span>
-                    <p class="lh-sm ms-3 footer-dit">Join our growing PNSLAI team! send your CV via
-                        www.Jobstreet.com.ph/PNSLAI
-                    </p>
-                </div>
+                    <p class="lh-sm ms-3 footer-dit">Join our growing PNSLAI team!. Send your CV <a href="https://forms.gle/oWZuqjcFhQWw31Qr9" class="text-secondary">here.</a></p>
+                 </div>
                 <div class="new5 mb-5"></div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-2">
                 <h3 class="mb-4 fw-bold">Links:</h3>
-                     <ul class="list-unstyled">
-                         <li><i class="fa fa-angle-right"></i><a href="../index.html" class="link-none"> Home</a></li>
-                         <br>
-                         <li><i class="fa fa-angle-right"></i><a href="../pages/history.html" class="link-none"> About Us</a>
-                         </li>
-                         <br>
-                         <li><i class="fa fa-angle-right"></i><a href="../pages/savings.phtml class="link-none"> Savings</a>
-                         </li>
-                         <br>
-                         <li><i class="fa fa-angle-right"></i><a href="../pages/membership.html" class="link-none">
-                             Membership</a></li>
-                         <br>
-                         <li><i class="fa fa-angle-right"></i><a href="../pages/loan.html" class="link-none">
-                             Loan</a></li>
-                         <br>
-                         <li><i class="fa fa-angle-right"></i><a href="../pages/downloadable.html" class="link-none">
-                             Downloadables</a>
-                         </li>
-                     </ul>
-            </div>
-            <div class="col-md-4">
+               <ul class="list-unstyled">
+                   <li><i class="fa fa-angle-right"></i><a href=""class="link-none"> Home</a></li>
+                   <br>
+                   <li><i class="fa fa-angle-right"></i><a href="../pages/history.html"class="link-none"> About Us</a></li>
+                   <br>
+                   <li><i class="fa fa-angle-right"></i><a href="../pages/membership.html"class="link-none"> Membership</a></li>
+                   <br>
+                   <li><i class="fa fa-angle-right"></i><a href="../pages/savings.html"class="link-none"> Savings Products</a></li>
+                   <br>
+                   <li><i class="fa fa-angle-right"></i><a href="../pages/loan.html" class="link-none"> Loan Packages</a></li>
+                   <br>
+                   <li><i class="fa fa-angle-right"></i><a href="../pages/privacy.html"  class="link-none"> Privacy Policy</a></li>
+                   <br>
+                   <li><i class="fa fa-angle-right"></i><a href="../pages/downloadable.html"class="link-none"> Downloadables</a></li>
+               </ul>
+             </div> 
+            <div class="col-md-3">
                 <div class="new5 mb-3"></div>
                 <h3 class=" mb-3 fw-bold">Connect to:</h3>
                 <div class="d-flex gap-3">
@@ -178,11 +139,13 @@
                             height="60"></i></a>
                 </div>
                 <div class="d-flex gap-3 mt-3">
-                    <a href="https://www.bsp.gov.ph/SitePages/Default.aspx
-          "><img src="../images/bsp.png" width="56" height="60"></a>
+                    <a href="https://www.bsp.gov.ph/SitePages/Default.aspx"><img src="../images/bsp.png" width="56" height="60"></a>
                     <a href="#"><i class="fab fa-facebook fa-3x text-white ms-3"></i></a>
                     <a href="#"><i class="fas fa-sharp fas-olid fa-envelope fa-3x text-white ms-4"></i></a>
                 </div>
+            </div>
+            <div class="col-md-2">
+              <div class="privacy d-flex gap-3mb-3"><img src="../images/privacy.png" class="privacy"alt="img-fluid"></div>        
             </div>
         </div>
     </div>
