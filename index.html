@@ -16,11 +16,53 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@300&family=Poppins:ital,wght@0,400;0,600;0,700;1,300&family=Roboto:ital,wght@1,700&display=swap">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
     <title>PNSLAI Official Webpage</title>
-</head>
-<!-- Google tag (gtag.js) -->
+<style>
+  /* Style for the popup */
+  #popup {
+      display: none;
+      position: fixed;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      border-radius: 10px;
+      z-index: 1000;
+      opacity: 0;
+      animation: popupAnimation 0.5s forwards; /* Apply animation */}
+  /* Image styling with responsive sizing */
+  #popup img {
+      max-width: 90vw; /* 90% of viewport width */
+      max-height: 90vh; /* 90% of viewport height */
+      width: auto;
+      height: auto; }
+  /* Overlay to darken the page background */
+  #overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 500;}
+  /* CSS animation for the popup (smooth fade and scale-in) */
+  @keyframes popupAnimation {
+      0% {opacity: 0;
+          transform: translate(-50%, -50%) scale(0.8);}
+      100% { opacity: 1;
+          transform: translate(-50%, -50%) scale(1); }}
+</style>
 <body class="bg-warning">
-<!--Header-->
-<!--Header-->
+ <!--Popup Photo-->
+  <section> 
+    <!-- The overlay background -->
+    <div id="overlay" onclick="closePopup()"></div>
+
+    <!-- The popup with the image -->
+    <div id="popup">
+        <img src="../images/PNSLAI- pop up for website.jpg" alt="Welcome Image">
+    </div>
+  </section>
 <header>
   <div class="container">
     <div class="row">
@@ -70,9 +112,9 @@
                 <div class="dropdown-menu">
                     <ul>
                         <span class="text-info"></span>
-                        <li><a class="btn btn-outline-info dropdown-item border-top border-info lh-1" href="pages/downloadable.html">Downloadable(Forms)</a></li>
-                        <li><a class="btn btn-outline-info dropdown-item lh-1" href="pages/offices.html">Branch Offices</a></li>
-                        <li><a class="btn btn-outline-info dropdown-item lh-1" href="pages/career.html">Career</a></li>
+                        <li><a class="btn btn-outline-info dropdown-item border-top border-info lh-1" href="pages/offices.html">Our Locations</a></li>
+                        <li><a class="btn btn-outline-info dropdown-item lh-1" href="pages/career.html">Careers</a></li>
+                        <li><a class="btn btn-outline-info dropdown-item lh-1" href="pages/pages/downloadable.html">Downloadable Forms</a></li>
                         <li><a class="btn btn-outline-info dropdown-item lh-1" href="pages/feedback.html">Feedback</a></li>
                     </ul>
                 </div>
@@ -117,6 +159,7 @@
     <div class="home-sdw vh-100 px-3"></div>
   </div>
  </div>
+</section>
 <!--UPDATES SECTION_Slider-->
 <section class="mt-5">
  <h3 class=" fw-bolder text-center text-danger">UPDATES</h3>
@@ -419,41 +462,25 @@
          </div>      
         <div class="new5 mb-5"></div>
       </div>
-
-      <div class="col-md-3">
+      <div class="col-md-2">
          <h3 class="mb-4 fw-bold">Links:</h3>
         <ul class="list-unstyled">
             <li><i class="fa fa-angle-right"></i><a href=""class="link-none"> Home</a></li>
             <br>
             <li><i class="fa fa-angle-right"></i><a href="pages/history.html"class="link-none"> About Us</a></li>
             <br>
-            <li><i class="fa fa-angle-right"></i><a href="pages/savings.html"class="link-none text-light"> Savings</a></li>
-            <br>
             <li><i class="fa fa-angle-right"></i><a href="pages/membership.html"class="link-none"> Membership</a></li>
             <br>
-            <li><i class="fa fa-angle-right"></i><a href="pages/loan.html" class="link-none"> Loan</a></li>
+            <li><i class="fa fa-angle-right"></i><a href="pages/savings.html"class="link-none text-light"> Savings Products</a></li>
             <br>
-            <li><i class="fa fa-angle-right"></i><a href="" data-bs-toggle="modal" data-bs-target="#modal_privacy" class="link-none"> Privacy Policy</a></li>
+            <li><i class="fa fa-angle-right"></i><a href="pages/loan.html" class="link-none"> Loan Packages</a></li>
+            <br>
+            <li><i class="fa fa-angle-right"></i><a href="pages/privacy.html" class="link-none"> Privacy Policy</a></li>
             <br>
             <li><i class="fa fa-angle-right"></i><a href="pages/downloadable.html"class="link-none"> Downloadables</a></li>
         </ul>
-      </div>
-      <!--modal_privacy-->
-      <div id="modal_privacy" class="modal fade">
-        <div class="modal-dialog modal-xl">
-          <div class="modal-content bg-transparent p-0" style="height: 100%; border: none;">
-            <div class="row">
-              <div class="col-md-12">
-                <img src="images/Privacy Notice.jpg" style="width:3000px; height: 140%;" alt=""class="img-fluid">
-                <button class="btn text-white" data-bs-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    
-
-      <div class="col-md-4">
+      </div>      
+      <div class="col-md-3">
         <div class="new5 mb-3"></div>
          <h3 class=" mb-3 fw-bold">Connect to:</h3>
         <div class="d-flex gap-3">
@@ -466,7 +493,10 @@
           "><img src="images/bsp.png" width="56" height="60"></a>
            <a href="#"><i class="fab fa-facebook fa-3x text-white ms-3"></i></a>
            <a href="#"><i class="fas fa-sharp fas-olid fa-envelope fa-3x text-white ms-4"></i></a>
-        </div>        
+        </div>   
+      </div>
+      <div class="col-md-2">
+        <div class="privacy d-flex gap-3mb-3"><img src="images/privacy.png" class="privacy"alt="img-fluid"></div>        
       </div>
     </div>
  </div>
@@ -478,6 +508,21 @@
     </div>
    </div>
 </footer>
+    <script>
+  // Function to open the popup automatically after the page loads
+  window.onload = function() {
+      setTimeout(function() {
+          document.getElementById('popup').style.display = 'block';
+          document.getElementById('overlay').style.display = 'block';
+      }, 1000); // Show popup after 1 second (1000 ms)
+  }
+
+  // Function to close the popup when the overlay is clicked
+  function closePopup() {
+      document.getElementById('popup').style.display = 'none';
+      document.getElementById('overlay').style.display = 'none';
+  }
+</script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/lightbox-plus-jquery.min.js"></script>
     <script src="js/script.js"></script>
