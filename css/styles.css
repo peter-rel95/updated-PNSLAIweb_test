@@ -792,6 +792,9 @@ img.read:hover {
 }
 
 @media screen and (max-width: 550px) {
+  .privacy{
+    width: 70%;
+    height:90%;}
   .navbar-nav .nav-link {
     display: contents;
   }
