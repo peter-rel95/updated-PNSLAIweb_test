@@ -1075,6 +1075,7 @@ img.read:hover {
 }
 @media screen and (max-width: 1000px) {
   .board{padding-left:12%;}
+  .management{padding-left:12%;}
   .img-container {
     background: var(--bs-info);
   }
