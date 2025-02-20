@@ -4,6 +4,24 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
+.board_back {
+    color: black;
+    font: 1em/1.5 "IBM Plex Sans", sans-serif;
+    background: linear-gradient(to bottom right,
+            rgba(0, 0, 0, 0.0),
+            rgba(0, 0, 0, 0.0)),
+        url('../images/pnslai_logo.png') center center no-repeat !important;
+    background-size: cover !important;
+}
+.management_back {
+    color: black;
+    font: 1em/1.5 "IBM Plex Sans", sans-serif;
+    background: linear-gradient(to bottom right,
+            rgba(0, 0, 0, 0.0),
+            rgba(0, 0, 0, 0.0)),
+        url('../images/managementback.png') center center no-repeat !important;
+    background-size: cover !important;
+}
 .try-home{
     padding-left: 5%;
     padding-right: 5%;
