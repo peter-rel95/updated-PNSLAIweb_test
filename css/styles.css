@@ -823,8 +823,8 @@ img.read:hover {
     max-height: 100%;
   }
   .home-contact {
-    border-left: 20px solid rgb(21, 84, 154) !important;
-    border-right: 20px solid rgb(21, 84, 154) !important;
+    border-left: 20px solid navy !important;
+    border-right: 20px solid navy !important;
   }
   /* Force table to not be like tables anymore */
   .account-list, .account-body, tbody, th, td,
